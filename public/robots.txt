@@ -1,2 +1,10 @@
 User-agent: *
-Disallow:
+Allow: /
+
+Disallow: /admin
+Disallow: /*/moj-nalog
+Disallow: /*/poslodavac
+Disallow: /*/prijava
+Disallow: /*/registracija
+
+Sitemap: https://gaudeamus.rs/sitemap.xml

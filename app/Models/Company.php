@@ -30,6 +30,8 @@ class Company extends Model implements HasMedia
         'city',
         'region_id',
         'is_verified',
+        'avg_rating',
+        'reviews_count',
     ];
 
     protected function casts(): array
@@ -67,5 +69,24 @@ class Company extends Model implements HasMedia
     public function jobListings(): HasMany
     {
         return $this->hasMany(JobListing::class);
+    }
+
+    public function reviews(): HasMany
+    {
+        return $this->hasMany(CompanyReview::class);
+    }
+
+    public function approvedReviews(): HasMany
+    {
+        return $this->hasMany(CompanyReview::class)->where('is_approved', true);
+    }
+
+    public function updateRating(): void
+    {
+        $approved = $this->reviews()->where('is_approved', true);
+        $this->update([
+            'avg_rating' => round($approved->avg('rating'), 1),
+            'reviews_count' => $approved->count(),
+        ]);
     }
 }

@@ -32,7 +32,11 @@ Route::prefix('{locale}')
         // Static pages
         Route::get('/o-nama', [PageController::class, 'about'])->name('pages.about');
         Route::get('/kontakt', [PageController::class, 'contact'])->name('pages.contact');
+        Route::get('/kalkulator', [PageController::class, 'calculator'])->name('pages.calculator');
         Route::get('/za-poslodavce', [PageController::class, 'employers'])->name('pages.employers');
+
+        // Company profile
+        Route::get('/kompanija/{slug}', [PageController::class, 'companyProfile'])->name('company.profile');
 
         // Auth routes
         Route::middleware('guest')->group(function () {
@@ -53,6 +57,9 @@ Route::prefix('{locale}')
             // Applications
             Route::post('/poslovi/{slug}/prijava', [App\Http\Controllers\ApplicationController::class, 'store'])->name('application.store');
 
+            // Company Reviews
+            Route::post('/kompanija/{company}/recenzija', [App\Http\Controllers\CompanyReviewController::class, 'store'])->name('company.review');
+
             // Student Dashboard
             Route::middleware('role:student')->prefix('moj-nalog')->group(function () {
                 Route::get('/', [App\Http\Controllers\Dashboard\StudentDashboardController::class, 'index'])->name('student.dashboard');
@@ -60,6 +67,8 @@ Route::prefix('{locale}')
                 Route::put('/profil', [App\Http\Controllers\Dashboard\StudentDashboardController::class, 'updateProfile'])->name('student.profile.update');
                 Route::get('/prijave', [App\Http\Controllers\Dashboard\StudentDashboardController::class, 'applications'])->name('student.applications');
                 Route::get('/sacuvano', [App\Http\Controllers\Dashboard\StudentDashboardController::class, 'bookmarks'])->name('student.bookmarks');
+                Route::get('/cv-builder', [App\Http\Controllers\Dashboard\CVBuilderController::class, 'index'])->name('student.cv');
+                Route::post('/cv-builder', [App\Http\Controllers\Dashboard\CVBuilderController::class, 'generate'])->name('student.cv.generate');
             });
 
             // Employer Dashboard
