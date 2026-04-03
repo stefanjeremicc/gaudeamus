@@ -52,5 +52,26 @@ Route::prefix('{locale}')
 
             // Applications
             Route::post('/poslovi/{slug}/prijava', [App\Http\Controllers\ApplicationController::class, 'store'])->name('application.store');
+
+            // Student Dashboard
+            Route::middleware('role:student')->prefix('moj-nalog')->group(function () {
+                Route::get('/', [App\Http\Controllers\Dashboard\StudentDashboardController::class, 'index'])->name('student.dashboard');
+                Route::get('/profil', [App\Http\Controllers\Dashboard\StudentDashboardController::class, 'profile'])->name('student.profile');
+                Route::put('/profil', [App\Http\Controllers\Dashboard\StudentDashboardController::class, 'updateProfile'])->name('student.profile.update');
+                Route::get('/prijave', [App\Http\Controllers\Dashboard\StudentDashboardController::class, 'applications'])->name('student.applications');
+                Route::get('/sacuvano', [App\Http\Controllers\Dashboard\StudentDashboardController::class, 'bookmarks'])->name('student.bookmarks');
+            });
+
+            // Employer Dashboard
+            Route::middleware('role:employer')->prefix('poslodavac')->group(function () {
+                Route::get('/', [App\Http\Controllers\Dashboard\EmployerDashboardController::class, 'index'])->name('employer.dashboard');
+                Route::get('/objavi-posao', [App\Http\Controllers\Dashboard\EmployerDashboardController::class, 'createJob'])->name('employer.jobs.create');
+                Route::post('/objavi-posao', [App\Http\Controllers\Dashboard\EmployerDashboardController::class, 'storeJob'])->name('employer.jobs.store');
+                Route::get('/oglasi', [App\Http\Controllers\Dashboard\EmployerDashboardController::class, 'myJobs'])->name('employer.jobs');
+                Route::get('/oglasi/{jobListing}/prijave', [App\Http\Controllers\Dashboard\EmployerDashboardController::class, 'jobApplications'])->name('employer.jobs.applications');
+                Route::put('/oglasi/{jobListing}/prijave/{application}', [App\Http\Controllers\Dashboard\EmployerDashboardController::class, 'updateApplicationStatus'])->name('employer.applications.update');
+                Route::get('/kompanija', [App\Http\Controllers\Dashboard\EmployerDashboardController::class, 'companyProfile'])->name('employer.company');
+                Route::put('/kompanija', [App\Http\Controllers\Dashboard\EmployerDashboardController::class, 'updateCompany'])->name('employer.company.update');
+            });
         });
     });

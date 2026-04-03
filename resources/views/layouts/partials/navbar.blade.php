@@ -63,7 +63,7 @@
                         </button>
                         <div x-show="open" @click.away="open = false" x-transition
                              class="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg py-1 z-50">
-                            <a href="#" class="block px-4 py-2 text-sm text-slate-700 hover:bg-primary-50">{{ __('messages.nav_my_account') }}</a>
+                            <a href="{{ auth()->user()->isEmployer() ? route('employer.dashboard', $locale) : route('student.dashboard', $locale) }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-primary-50">{{ __('messages.nav_my_account') }}</a>
                             <form method="POST" action="{{ route('logout', $locale) }}">
                                 @csrf
                                 <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-50">
@@ -113,7 +113,7 @@
             </div>
 
             @auth
-                <a href="#" class="block px-4 py-2 rounded-lg hover:bg-white/10">{{ __('messages.nav_my_account') }}</a>
+                <a href="{{ auth()->user()->isEmployer() ? route('employer.dashboard', $locale) : route('student.dashboard', $locale) }}" class="block px-4 py-2 rounded-lg hover:bg-white/10">{{ __('messages.nav_my_account') }}</a>
                 <form method="POST" action="{{ route('logout', $locale) }}">
                     @csrf
                     <button type="submit" class="block w-full text-left px-4 py-2 rounded-lg text-red-300 hover:bg-white/10">{{ __('messages.nav_logout') }}</button>
