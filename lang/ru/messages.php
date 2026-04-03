@@ -1,0 +1,107 @@
+<?php
+return [
+    // Navigation
+    'nav_home' => 'Главная',
+    'nav_jobs' => 'Вакансии',
+    'nav_about' => 'О нас',
+    'nav_blog' => 'Блог',
+    'nav_contact' => 'Контакты',
+    'nav_for_employers' => 'Для работодателей',
+    'nav_login' => 'Вход',
+    'nav_register' => 'Регистрация',
+    'nav_my_account' => 'Мой аккаунт',
+    'nav_logout' => 'Выход',
+
+    // Hero
+    'hero_title' => 'Найдите работу, которая подходит вашему расписанию.',
+    'hero_subtitle' => 'Студенческий кооператив Gaudeamus связывает студентов с лучшими работодателями в Сербии.',
+    'hero_search_placeholder' => 'Поиск вакансий...',
+    'hero_city_placeholder' => 'Город',
+    'hero_search_button' => 'Найти',
+    'hero_active_jobs' => 'активных вакансий',
+    'hero_cities' => 'городов',
+    'hero_students' => 'студентов',
+
+    // Job Listings
+    'jobs_title' => 'Список вакансий',
+    'jobs_popular' => 'Популярные вакансии',
+    'jobs_new' => 'Новые вакансии',
+    'jobs_all' => 'Все вакансии',
+    'jobs_positions' => 'мест',
+    'jobs_per_hour' => 'дин/ч',
+    'jobs_hours_week' => 'ч/нед',
+    'jobs_save' => 'Сохранить',
+    'jobs_saved' => 'Сохранено',
+    'jobs_share' => 'Поделиться',
+    'jobs_apply' => 'Откликнуться',
+    'jobs_apply_now' => 'Откликнуться сейчас',
+    'jobs_deadline' => 'Срок подачи',
+    'jobs_posted' => 'Опубликовано',
+    'jobs_views' => 'просмотров',
+    'jobs_no_results' => 'По вашему запросу ничего не найдено.',
+
+    // Filters
+    'filter_title' => 'Фильтры',
+    'filter_status' => 'Статус',
+    'filter_status_student' => 'Студент',
+    'filter_status_unemployed' => 'Безработный',
+    'filter_status_both' => 'Все',
+    'filter_region' => 'Регион',
+    'filter_category' => 'Сфера работы',
+    'filter_hours' => 'Рабочее время',
+    'filter_rate' => 'Почасовая оплата',
+    'filter_shift' => 'Смена',
+    'filter_shift_morning' => 'Утренняя',
+    'filter_shift_afternoon' => 'Дневная',
+    'filter_shift_night' => 'Ночная',
+    'filter_shift_flexible' => 'Гибкая',
+    'filter_ad_type' => 'Тип работы',
+    'filter_full_time' => 'Полная занятость',
+    'filter_part_time' => 'Частичная занятость',
+    'filter_seasonal' => 'Сезонная',
+    'filter_one_time' => 'Разовая',
+    'filter_clear' => 'Сбросить фильтры',
+    'filter_apply' => 'Применить',
+
+    // Categories
+    'categories_title' => 'Категории',
+    'categories_view_all' => 'Все категории',
+
+    // Why Gaudeamus
+    'why_title' => 'Почему Gaudeamus?',
+    'why_secure_title' => 'Безопасная работа',
+    'why_secure_desc' => 'Все работодатели проверены. Работайте уверенно и с правовой защитой.',
+    'why_payment_title' => 'Быстрая оплата',
+    'why_payment_desc' => 'Регулярная выплата зарплаты, без ожидания. Прозрачные условия труда.',
+    'why_free_title' => 'Бесплатная регистрация',
+    'why_free_desc' => 'Зарегистрируйтесь бесплатно и начните поиск работы менее чем за минуту.',
+
+    // Auth
+    'auth_login' => 'Войти',
+    'auth_register' => 'Регистрация',
+    'auth_email' => 'Электронная почта',
+    'auth_password' => 'Пароль',
+    'auth_confirm_password' => 'Подтвердите пароль',
+    'auth_name' => 'Полное имя',
+    'auth_remember' => 'Запомнить меня',
+    'auth_forgot' => 'Забыли пароль?',
+    'auth_no_account' => 'Нет аккаунта?',
+    'auth_has_account' => 'Уже есть аккаунт?',
+    'auth_register_student' => 'Регистрация студента',
+    'auth_register_employer' => 'Регистрация работодателя',
+
+    // Footer
+    'footer_description' => 'Студенческий кооператив Gaudeamus - Ваш партнёр в поиске идеальной студенческой работы.',
+    'footer_links' => 'Быстрые ссылки',
+    'footer_contact' => 'Контакты',
+    'footer_follow' => 'Подписывайтесь',
+    'footer_rights' => 'Все права защищены.',
+
+    // General
+    'read_more' => 'Подробнее',
+    'view_all' => 'Смотреть все',
+    'loading' => 'Загрузка...',
+    'back' => 'Назад',
+    'close' => 'Закрыть',
+    'search' => 'Поиск',
+];

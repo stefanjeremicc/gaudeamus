@@ -1,0 +1,107 @@
+<?php
+return [
+    // Navigation
+    'nav_home' => 'Home',
+    'nav_jobs' => 'Jobs',
+    'nav_about' => 'About Us',
+    'nav_blog' => 'Blog',
+    'nav_contact' => 'Contact',
+    'nav_for_employers' => 'For Employers',
+    'nav_login' => 'Login',
+    'nav_register' => 'Register',
+    'nav_my_account' => 'My Account',
+    'nav_logout' => 'Logout',
+
+    // Hero
+    'hero_title' => 'Find a job that fits your schedule.',
+    'hero_subtitle' => 'Student cooperative Gaudeamus connects students with the best employers in Serbia.',
+    'hero_search_placeholder' => 'Search jobs...',
+    'hero_city_placeholder' => 'City',
+    'hero_search_button' => 'Search',
+    'hero_active_jobs' => 'active listings',
+    'hero_cities' => 'cities',
+    'hero_students' => 'students',
+
+    // Job Listings
+    'jobs_title' => 'Job Listings',
+    'jobs_popular' => 'Popular Jobs',
+    'jobs_new' => 'New Jobs',
+    'jobs_all' => 'All Jobs',
+    'jobs_positions' => 'positions',
+    'jobs_per_hour' => 'RSD/h',
+    'jobs_hours_week' => 'h/week',
+    'jobs_save' => 'Save',
+    'jobs_saved' => 'Saved',
+    'jobs_share' => 'Share',
+    'jobs_apply' => 'Apply',
+    'jobs_apply_now' => 'Apply Now',
+    'jobs_deadline' => 'Application deadline',
+    'jobs_posted' => 'Posted',
+    'jobs_views' => 'views',
+    'jobs_no_results' => 'No results found for your search.',
+
+    // Filters
+    'filter_title' => 'Filters',
+    'filter_status' => 'Status',
+    'filter_status_student' => 'Student',
+    'filter_status_unemployed' => 'Unemployed',
+    'filter_status_both' => 'All',
+    'filter_region' => 'Region',
+    'filter_category' => 'Field of Work',
+    'filter_hours' => 'Working Hours',
+    'filter_rate' => 'Hourly Rate',
+    'filter_shift' => 'Shift',
+    'filter_shift_morning' => 'Morning',
+    'filter_shift_afternoon' => 'Afternoon',
+    'filter_shift_night' => 'Night',
+    'filter_shift_flexible' => 'Flexible',
+    'filter_ad_type' => 'Job Type',
+    'filter_full_time' => 'Full Time',
+    'filter_part_time' => 'Part Time',
+    'filter_seasonal' => 'Seasonal',
+    'filter_one_time' => 'One-time',
+    'filter_clear' => 'Clear Filters',
+    'filter_apply' => 'Apply',
+
+    // Categories
+    'categories_title' => 'Categories',
+    'categories_view_all' => 'View All',
+
+    // Why Gaudeamus
+    'why_title' => 'Why Gaudeamus?',
+    'why_secure_title' => 'Secure Employment',
+    'why_secure_desc' => 'All employers are verified. Work with confidence and legal protection.',
+    'why_payment_title' => 'Fast Payment',
+    'why_payment_desc' => 'Regular salary payments, no waiting. Transparent working conditions.',
+    'why_free_title' => 'Free Registration',
+    'why_free_desc' => 'Register for free and start looking for a job in less than a minute.',
+
+    // Auth
+    'auth_login' => 'Log In',
+    'auth_register' => 'Register',
+    'auth_email' => 'Email address',
+    'auth_password' => 'Password',
+    'auth_confirm_password' => 'Confirm password',
+    'auth_name' => 'Full name',
+    'auth_remember' => 'Remember me',
+    'auth_forgot' => 'Forgot your password?',
+    'auth_no_account' => "Don't have an account?",
+    'auth_has_account' => 'Already have an account?',
+    'auth_register_student' => 'Register as Student',
+    'auth_register_employer' => 'Register as Employer',
+
+    // Footer
+    'footer_description' => 'Student Cooperative Gaudeamus - Your partner in finding the ideal student job.',
+    'footer_links' => 'Quick Links',
+    'footer_contact' => 'Contact',
+    'footer_follow' => 'Follow Us',
+    'footer_rights' => 'All rights reserved.',
+
+    // General
+    'read_more' => 'Read More',
+    'view_all' => 'View All',
+    'loading' => 'Loading...',
+    'back' => 'Back',
+    'close' => 'Close',
+    'search' => 'Search',
+];

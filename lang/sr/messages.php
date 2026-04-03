@@ -1,0 +1,107 @@
+<?php
+return [
+    // Navigation
+    'nav_home' => 'Početna',
+    'nav_jobs' => 'Poslovi',
+    'nav_about' => 'O nama',
+    'nav_blog' => 'Blog',
+    'nav_contact' => 'Kontakt',
+    'nav_for_employers' => 'Za poslodavce',
+    'nav_login' => 'Prijava',
+    'nav_register' => 'Registracija',
+    'nav_my_account' => 'Moj nalog',
+    'nav_logout' => 'Odjava',
+
+    // Hero
+    'hero_title' => 'Pronađi posao koji se uklapa u tvoj raspored.',
+    'hero_subtitle' => 'Studentska zadruga Gaudeamus povezuje studente sa najboljim poslodavcima u Srbiji.',
+    'hero_search_placeholder' => 'Pretraži poslove...',
+    'hero_city_placeholder' => 'Grad',
+    'hero_search_button' => 'Pretraži',
+    'hero_active_jobs' => 'aktivnih oglasa',
+    'hero_cities' => 'gradova',
+    'hero_students' => 'studenata',
+
+    // Job Listings
+    'jobs_title' => 'Oglasi za posao',
+    'jobs_popular' => 'Popularni poslovi',
+    'jobs_new' => 'Novi poslovi',
+    'jobs_all' => 'Svi poslovi',
+    'jobs_positions' => 'mesta',
+    'jobs_per_hour' => 'din/h',
+    'jobs_hours_week' => 'h nedeljno',
+    'jobs_save' => 'Sačuvaj',
+    'jobs_saved' => 'Sačuvano',
+    'jobs_share' => 'Podeli',
+    'jobs_apply' => 'Prijavi se',
+    'jobs_apply_now' => 'Prijavi se odmah',
+    'jobs_deadline' => 'Rok za prijavu',
+    'jobs_posted' => 'Objavljeno',
+    'jobs_views' => 'pregleda',
+    'jobs_no_results' => 'Nema rezultata za zadatu pretragu.',
+
+    // Filters
+    'filter_title' => 'Filteri',
+    'filter_status' => 'Status',
+    'filter_status_student' => 'Student',
+    'filter_status_unemployed' => 'Nezaposlen',
+    'filter_status_both' => 'Svi',
+    'filter_region' => 'Region',
+    'filter_category' => 'Oblast rada',
+    'filter_hours' => 'Radno vreme',
+    'filter_rate' => 'Satnica',
+    'filter_shift' => 'Smena',
+    'filter_shift_morning' => 'Jutarnja',
+    'filter_shift_afternoon' => 'Popodnevna',
+    'filter_shift_night' => 'Noćna',
+    'filter_shift_flexible' => 'Fleksibilna',
+    'filter_ad_type' => 'Tip oglasa',
+    'filter_full_time' => 'Puno radno vreme',
+    'filter_part_time' => 'Skraćeno radno vreme',
+    'filter_seasonal' => 'Sezonski',
+    'filter_one_time' => 'Jednokratno',
+    'filter_clear' => 'Obriši filtere',
+    'filter_apply' => 'Primeni',
+
+    // Categories
+    'categories_title' => 'Kategorije',
+    'categories_view_all' => 'Pogledaj sve',
+
+    // Why Gaudeamus
+    'why_title' => 'Zašto Gaudeamus?',
+    'why_secure_title' => 'Siguran posao',
+    'why_secure_desc' => 'Svi poslodavci su verifikovani. Radite sa sigurnošću i zakonskom zaštitom.',
+    'why_payment_title' => 'Brza isplata',
+    'why_payment_desc' => 'Redovna isplata zarade, bez čekanja. Transparentni uslovi rada.',
+    'why_free_title' => 'Besplatna registracija',
+    'why_free_desc' => 'Registrujte se besplatno i počnite da tražite posao za manje od minut.',
+
+    // Auth
+    'auth_login' => 'Prijavi se',
+    'auth_register' => 'Registruj se',
+    'auth_email' => 'Email adresa',
+    'auth_password' => 'Lozinka',
+    'auth_confirm_password' => 'Potvrdi lozinku',
+    'auth_name' => 'Ime i prezime',
+    'auth_remember' => 'Zapamti me',
+    'auth_forgot' => 'Zaboravili ste lozinku?',
+    'auth_no_account' => 'Nemate nalog?',
+    'auth_has_account' => 'Već imate nalog?',
+    'auth_register_student' => 'Registruj se kao student',
+    'auth_register_employer' => 'Registruj se kao poslodavac',
+
+    // Footer
+    'footer_description' => 'Studentska zadruga Gaudeamus - Vaš partner u pronalaženju idealnog studentskog posla.',
+    'footer_links' => 'Brzi linkovi',
+    'footer_contact' => 'Kontakt',
+    'footer_follow' => 'Pratite nas',
+    'footer_rights' => 'Sva prava zadržana.',
+
+    // General
+    'read_more' => 'Pročitaj više',
+    'view_all' => 'Pogledaj sve',
+    'loading' => 'Učitavanje...',
+    'back' => 'Nazad',
+    'close' => 'Zatvori',
+    'search' => 'Pretraži',
+];
